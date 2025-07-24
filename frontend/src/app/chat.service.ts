@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ChatService {
 
-  private apiUrl = 'http://localhost:3000/chat'; // the backend URL
+  private apiUrl = 'https://notebooklm-backend-1ub2.onrender.com/chat'; // the backend URL
 
   constructor(private http: HttpClient) {}
 
