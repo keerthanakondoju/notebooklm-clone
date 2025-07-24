@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  background: #f8f9fb;
+  color: #333;
+}
+
+input, button {
+  font-family: inherit;
+  outline: none;
+}

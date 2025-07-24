@@ -1,0 +1,22 @@
+<div class="chat-container">
+  <div *ngFor="let message of messages"
+       class="chat-message"
+       [ngClass]="{ 'user': message.sender === 'User', 'bot': message.sender === 'Bot' }">
+    <div class="sender">{{ message.sender }}:</div>
+    <div class="message-text">{{ message.text }}</div>
+  </div>
+</div>
+
+
+    <div *ngIf="loading" class="message Bot">
+    <em>Typing...</em>
+  </div>
+
+  
+    
+<input
+  [(ngModel)]="userInput"
+  (keyup.enter)="sendMessage()"
+  placeholder="Ask something about the PDF..."
+  class="chat-input"
+/>
